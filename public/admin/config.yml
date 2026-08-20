@@ -1,7 +1,9 @@
 backend:
   name: github
-  repo: TON-PSEUDO/TON-DEPOT
+  repo: BanditChaud/neo_archive
   branch: main
+  base_url: https://decap-oauth.netlify.app
+  auth_endpoint: auth
 
 media_folder: "src/site/uploads"
 public_folder: "/uploads"
