@@ -2,8 +2,7 @@ backend:
   name: github
   repo: BanditChaud/neo_archive
   branch: main
-  base_url: https://decap-bridge.vercel.app
-  auth_endpoint: /api/auth
+  auth_type: implicit
 
 media_folder: "src/site/uploads"
 public_folder: "/uploads"
