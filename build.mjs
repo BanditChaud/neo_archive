@@ -3,6 +3,7 @@ import path from 'node:path';
 
 const root = process.cwd();
 const src = path.join(root, 'src');
+const publicDir = path.join(root, 'public');
 const out = path.join(root, 'dist');
 
 fs.rmSync(out, { recursive: true, force: true });
@@ -19,7 +20,11 @@ function copyDir(from, to) {
   }
 }
 
+// Copie les fichiers du site
 copyDir(path.join(src, 'site'), out);
+
+// Copie le dossier public (qui contient ton dossier admin)
+copyDir(publicDir, out);
 
 const data = {};
 for (const name of ['images', 'music', 'texts', 'settings']) {
