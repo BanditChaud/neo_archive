@@ -2,8 +2,8 @@ backend:
   name: github
   repo: BanditChaud/neo_archive
   branch: main
-  base_url: https://decap-oauth.netlify.app
-  auth_endpoint: auth
+  base_url: https://decap-bridge.vercel.app
+  auth_endpoint: /api/auth
 
 media_folder: "src/site/uploads"
 public_folder: "/uploads"
