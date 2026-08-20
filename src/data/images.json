@@ -1,0 +1,22 @@
+[
+  {
+    "id": "01",
+    "title": "Untitled Fragment",
+    "artist": "Archive",
+    "year": "2026",
+    "image": "https://images.unsplash.com/photo-1519608487953-e999c86e7455?auto=format&fit=crop&w=1400&q=85",
+    "description": "Une première pièce de démonstration.",
+    "musicId": "01",
+    "tags": ["archive", "night"]
+  },
+  {
+    "id": "02",
+    "title": "After Midnight",
+    "artist": "Unknown",
+    "year": "2026",
+    "image": "https://images.unsplash.com/photo-1518005020951-eccb494ad742?auto=format&fit=crop&w=1400&q=85",
+    "description": "Deuxième pièce de démonstration.",
+    "musicId": "02",
+    "tags": ["dark", "city"]
+  }
+]

@@ -1,0 +1,60 @@
+backend:
+  name: github
+  repo: TON-PSEUDO/TON-DEPOT
+  branch: main
+
+media_folder: "src/site/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "images"
+    label: "Images"
+    folder: "src/content/images"
+    create: true
+    slug: "{{year}}-{{slug}}"
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Artiste", name: "artist", widget: "string", required: false}
+      - {label: "Année", name: "year", widget: "string", required: false}
+      - {label: "Image", name: "image", widget: "image"}
+      - {label: "Description", name: "description", widget: "text", required: false}
+      - {label: "Musique associée", name: "musicId", widget: "string", required: false}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+
+  - name: "music"
+    label: "Musiques"
+    folder: "src/content/music"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Artiste", name: "artist", widget: "string", required: false}
+      - {label: "Album", name: "album", widget: "string", required: false}
+      - {label: "Embed URL", name: "embed", widget: "string", required: false}
+      - {label: "Description", name: "description", widget: "text", required: false}
+
+  - name: "texts"
+    label: "Textes"
+    folder: "src/content/texts"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Titre", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Résumé", name: "excerpt", widget: "text", required: false}
+      - {label: "Texte", name: "body", widget: "markdown"}
+      - {label: "Tags", name: "tags", widget: "list", required: false}
+
+  - name: "settings"
+    label: "Réglages du site"
+    files:
+      - file: "src/data/settings.json"
+        label: "Accueil et About"
+        name: "settings"
+        fields:
+          - {label: "Nom du site", name: "siteTitle", widget: "string"}
+          - {label: "Slogan", name: "tagline", widget: "string"}
+          - {label: "Introduction", name: "intro", widget: "text"}
+          - {label: "Titre About", name: "aboutTitle", widget: "string"}
+          - {label: "Texte About", name: "aboutText", widget: "markdown"}
+          - {label: "Couleur d'accent", name: "accent", widget: "color"}

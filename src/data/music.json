@@ -1,0 +1,18 @@
+[
+  {
+    "id": "01",
+    "title": "Night Signal",
+    "artist": "Demo Artist",
+    "album": "Archive 01",
+    "embed": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "Exemple de morceau associé à une image."
+  },
+  {
+    "id": "02",
+    "title": "Static Memory",
+    "artist": "Demo Artist",
+    "album": "Archive 02",
+    "embed": "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    "description": "Deuxième exemple."
+  }
+]
